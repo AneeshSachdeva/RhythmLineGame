@@ -25,6 +25,7 @@
 		A51D5B1A19871D9C00A55B06 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A51D5AF219871D9C00A55B06 /* UIKit.framework */; };
 		A51D5B2219871D9C00A55B06 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A51D5B2019871D9C00A55B06 /* InfoPlist.strings */; };
 		A51D5B2419871D9C00A55B06 /* RhythmLineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A51D5B2319871D9C00A55B06 /* RhythmLineTests.m */; };
+		A51D5B2E19871E5200A55B06 /* Umoove.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A51D5B2D19871E5200A55B06 /* Umoove.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		A51D5B1F19871D9C00A55B06 /* RhythmLineTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RhythmLineTests-Info.plist"; sourceTree = "<group>"; };
 		A51D5B2119871D9C00A55B06 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A51D5B2319871D9C00A55B06 /* RhythmLineTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RhythmLineTests.m; sourceTree = "<group>"; };
+		A51D5B2D19871E5200A55B06 /* Umoove.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Umoove.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				A51D5AF119871D9C00A55B06 /* CoreGraphics.framework in Frameworks */,
 				A51D5AF319871D9C00A55B06 /* UIKit.framework in Frameworks */,
 				A51D5AF519871D9C00A55B06 /* SpriteKit.framework in Frameworks */,
+				A51D5B2E19871E5200A55B06 /* Umoove.framework in Frameworks */,
 				A51D5AEF19871D9C00A55B06 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -111,6 +114,7 @@
 		A51D5AED19871D9C00A55B06 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A51D5B2D19871E5200A55B06 /* Umoove.framework */,
 				A51D5AEE19871D9C00A55B06 /* Foundation.framework */,
 				A51D5AF019871D9C00A55B06 /* CoreGraphics.framework */,
 				A51D5AF219871D9C00A55B06 /* UIKit.framework */,
@@ -405,6 +409,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RhythmLine/RhythmLine-Prefix.pch";
 				INFOPLIST_FILE = "RhythmLine/RhythmLine-Info.plist";
@@ -419,6 +427,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RhythmLine/RhythmLine-Prefix.pch";
 				INFOPLIST_FILE = "RhythmLine/RhythmLine-Info.plist";
