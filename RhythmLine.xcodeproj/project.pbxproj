@@ -1,0 +1,502 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A51D5AEF19871D9C00A55B06 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A51D5AEE19871D9C00A55B06 /* Foundation.framework */; };
+		A51D5AF119871D9C00A55B06 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A51D5AF019871D9C00A55B06 /* CoreGraphics.framework */; };
+		A51D5AF319871D9C00A55B06 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A51D5AF219871D9C00A55B06 /* UIKit.framework */; };
+		A51D5AF519871D9C00A55B06 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A51D5AF419871D9C00A55B06 /* SpriteKit.framework */; };
+		A51D5AFB19871D9C00A55B06 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A51D5AF919871D9C00A55B06 /* InfoPlist.strings */; };
+		A51D5AFD19871D9C00A55B06 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A51D5AFC19871D9C00A55B06 /* main.m */; };
+		A51D5B0119871D9C00A55B06 /* RLGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A51D5B0019871D9C00A55B06 /* RLGAppDelegate.m */; };
+		A51D5B0419871D9C00A55B06 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A51D5B0219871D9C00A55B06 /* Main_iPhone.storyboard */; };
+		A51D5B0719871D9C00A55B06 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A51D5B0519871D9C00A55B06 /* Main_iPad.storyboard */; };
+		A51D5B0A19871D9C00A55B06 /* RLGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A51D5B0919871D9C00A55B06 /* RLGViewController.m */; };
+		A51D5B0D19871D9C00A55B06 /* RLGMyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = A51D5B0C19871D9C00A55B06 /* RLGMyScene.m */; };
+		A51D5B0F19871D9C00A55B06 /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = A51D5B0E19871D9C00A55B06 /* Spaceship.png */; };
+		A51D5B1119871D9C00A55B06 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A51D5B1019871D9C00A55B06 /* Images.xcassets */; };
+		A51D5B1819871D9C00A55B06 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A51D5B1719871D9C00A55B06 /* XCTest.framework */; };
+		A51D5B1919871D9C00A55B06 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A51D5AEE19871D9C00A55B06 /* Foundation.framework */; };
+		A51D5B1A19871D9C00A55B06 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A51D5AF219871D9C00A55B06 /* UIKit.framework */; };
+		A51D5B2219871D9C00A55B06 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A51D5B2019871D9C00A55B06 /* InfoPlist.strings */; };
+		A51D5B2419871D9C00A55B06 /* RhythmLineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A51D5B2319871D9C00A55B06 /* RhythmLineTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A51D5B1B19871D9C00A55B06 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A51D5AE319871D9C00A55B06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A51D5AEA19871D9C00A55B06;
+			remoteInfo = RhythmLine;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A51D5AEB19871D9C00A55B06 /* RhythmLine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RhythmLine.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A51D5AEE19871D9C00A55B06 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A51D5AF019871D9C00A55B06 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A51D5AF219871D9C00A55B06 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A51D5AF419871D9C00A55B06 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		A51D5AF819871D9C00A55B06 /* RhythmLine-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RhythmLine-Info.plist"; sourceTree = "<group>"; };
+		A51D5AFA19871D9C00A55B06 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A51D5AFC19871D9C00A55B06 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A51D5AFE19871D9C00A55B06 /* RhythmLine-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RhythmLine-Prefix.pch"; sourceTree = "<group>"; };
+		A51D5AFF19871D9C00A55B06 /* RLGAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RLGAppDelegate.h; sourceTree = "<group>"; };
+		A51D5B0019871D9C00A55B06 /* RLGAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RLGAppDelegate.m; sourceTree = "<group>"; };
+		A51D5B0319871D9C00A55B06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		A51D5B0619871D9C00A55B06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		A51D5B0819871D9C00A55B06 /* RLGViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RLGViewController.h; sourceTree = "<group>"; };
+		A51D5B0919871D9C00A55B06 /* RLGViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RLGViewController.m; sourceTree = "<group>"; };
+		A51D5B0B19871D9C00A55B06 /* RLGMyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RLGMyScene.h; sourceTree = "<group>"; };
+		A51D5B0C19871D9C00A55B06 /* RLGMyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RLGMyScene.m; sourceTree = "<group>"; };
+		A51D5B0E19871D9C00A55B06 /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
+		A51D5B1019871D9C00A55B06 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A51D5B1619871D9C00A55B06 /* RhythmLineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RhythmLineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A51D5B1719871D9C00A55B06 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		A51D5B1F19871D9C00A55B06 /* RhythmLineTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RhythmLineTests-Info.plist"; sourceTree = "<group>"; };
+		A51D5B2119871D9C00A55B06 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A51D5B2319871D9C00A55B06 /* RhythmLineTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RhythmLineTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A51D5AE819871D9C00A55B06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A51D5AF119871D9C00A55B06 /* CoreGraphics.framework in Frameworks */,
+				A51D5AF319871D9C00A55B06 /* UIKit.framework in Frameworks */,
+				A51D5AF519871D9C00A55B06 /* SpriteKit.framework in Frameworks */,
+				A51D5AEF19871D9C00A55B06 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A51D5B1319871D9C00A55B06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A51D5B1819871D9C00A55B06 /* XCTest.framework in Frameworks */,
+				A51D5B1A19871D9C00A55B06 /* UIKit.framework in Frameworks */,
+				A51D5B1919871D9C00A55B06 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A51D5AE219871D9C00A55B06 = {
+			isa = PBXGroup;
+			children = (
+				A51D5AF619871D9C00A55B06 /* RhythmLine */,
+				A51D5B1D19871D9C00A55B06 /* RhythmLineTests */,
+				A51D5AED19871D9C00A55B06 /* Frameworks */,
+				A51D5AEC19871D9C00A55B06 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A51D5AEC19871D9C00A55B06 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A51D5AEB19871D9C00A55B06 /* RhythmLine.app */,
+				A51D5B1619871D9C00A55B06 /* RhythmLineTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A51D5AED19871D9C00A55B06 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A51D5AEE19871D9C00A55B06 /* Foundation.framework */,
+				A51D5AF019871D9C00A55B06 /* CoreGraphics.framework */,
+				A51D5AF219871D9C00A55B06 /* UIKit.framework */,
+				A51D5AF419871D9C00A55B06 /* SpriteKit.framework */,
+				A51D5B1719871D9C00A55B06 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A51D5AF619871D9C00A55B06 /* RhythmLine */ = {
+			isa = PBXGroup;
+			children = (
+				A51D5AFF19871D9C00A55B06 /* RLGAppDelegate.h */,
+				A51D5B0019871D9C00A55B06 /* RLGAppDelegate.m */,
+				A51D5B0219871D9C00A55B06 /* Main_iPhone.storyboard */,
+				A51D5B0519871D9C00A55B06 /* Main_iPad.storyboard */,
+				A51D5B0819871D9C00A55B06 /* RLGViewController.h */,
+				A51D5B0919871D9C00A55B06 /* RLGViewController.m */,
+				A51D5B0B19871D9C00A55B06 /* RLGMyScene.h */,
+				A51D5B0C19871D9C00A55B06 /* RLGMyScene.m */,
+				A51D5B0E19871D9C00A55B06 /* Spaceship.png */,
+				A51D5B1019871D9C00A55B06 /* Images.xcassets */,
+				A51D5AF719871D9C00A55B06 /* Supporting Files */,
+			);
+			path = RhythmLine;
+			sourceTree = "<group>";
+		};
+		A51D5AF719871D9C00A55B06 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A51D5AF819871D9C00A55B06 /* RhythmLine-Info.plist */,
+				A51D5AF919871D9C00A55B06 /* InfoPlist.strings */,
+				A51D5AFC19871D9C00A55B06 /* main.m */,
+				A51D5AFE19871D9C00A55B06 /* RhythmLine-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A51D5B1D19871D9C00A55B06 /* RhythmLineTests */ = {
+			isa = PBXGroup;
+			children = (
+				A51D5B2319871D9C00A55B06 /* RhythmLineTests.m */,
+				A51D5B1E19871D9C00A55B06 /* Supporting Files */,
+			);
+			path = RhythmLineTests;
+			sourceTree = "<group>";
+		};
+		A51D5B1E19871D9C00A55B06 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A51D5B1F19871D9C00A55B06 /* RhythmLineTests-Info.plist */,
+				A51D5B2019871D9C00A55B06 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A51D5AEA19871D9C00A55B06 /* RhythmLine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A51D5B2719871D9C00A55B06 /* Build configuration list for PBXNativeTarget "RhythmLine" */;
+			buildPhases = (
+				A51D5AE719871D9C00A55B06 /* Sources */,
+				A51D5AE819871D9C00A55B06 /* Frameworks */,
+				A51D5AE919871D9C00A55B06 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RhythmLine;
+			productName = RhythmLine;
+			productReference = A51D5AEB19871D9C00A55B06 /* RhythmLine.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A51D5B1519871D9C00A55B06 /* RhythmLineTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A51D5B2A19871D9C00A55B06 /* Build configuration list for PBXNativeTarget "RhythmLineTests" */;
+			buildPhases = (
+				A51D5B1219871D9C00A55B06 /* Sources */,
+				A51D5B1319871D9C00A55B06 /* Frameworks */,
+				A51D5B1419871D9C00A55B06 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A51D5B1C19871D9C00A55B06 /* PBXTargetDependency */,
+			);
+			name = RhythmLineTests;
+			productName = RhythmLineTests;
+			productReference = A51D5B1619871D9C00A55B06 /* RhythmLineTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A51D5AE319871D9C00A55B06 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RLG;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Applos;
+				TargetAttributes = {
+					A51D5B1519871D9C00A55B06 = {
+						TestTargetID = A51D5AEA19871D9C00A55B06;
+					};
+				};
+			};
+			buildConfigurationList = A51D5AE619871D9C00A55B06 /* Build configuration list for PBXProject "RhythmLine" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A51D5AE219871D9C00A55B06;
+			productRefGroup = A51D5AEC19871D9C00A55B06 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A51D5AEA19871D9C00A55B06 /* RhythmLine */,
+				A51D5B1519871D9C00A55B06 /* RhythmLineTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A51D5AE919871D9C00A55B06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A51D5B0F19871D9C00A55B06 /* Spaceship.png in Resources */,
+				A51D5B1119871D9C00A55B06 /* Images.xcassets in Resources */,
+				A51D5B0719871D9C00A55B06 /* Main_iPad.storyboard in Resources */,
+				A51D5B0419871D9C00A55B06 /* Main_iPhone.storyboard in Resources */,
+				A51D5AFB19871D9C00A55B06 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A51D5B1419871D9C00A55B06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A51D5B2219871D9C00A55B06 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A51D5AE719871D9C00A55B06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A51D5B0D19871D9C00A55B06 /* RLGMyScene.m in Sources */,
+				A51D5B0119871D9C00A55B06 /* RLGAppDelegate.m in Sources */,
+				A51D5B0A19871D9C00A55B06 /* RLGViewController.m in Sources */,
+				A51D5AFD19871D9C00A55B06 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A51D5B1219871D9C00A55B06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A51D5B2419871D9C00A55B06 /* RhythmLineTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A51D5B1C19871D9C00A55B06 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A51D5AEA19871D9C00A55B06 /* RhythmLine */;
+			targetProxy = A51D5B1B19871D9C00A55B06 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A51D5AF919871D9C00A55B06 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A51D5AFA19871D9C00A55B06 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A51D5B0219871D9C00A55B06 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A51D5B0319871D9C00A55B06 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		A51D5B0519871D9C00A55B06 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A51D5B0619871D9C00A55B06 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		A51D5B2019871D9C00A55B06 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A51D5B2119871D9C00A55B06 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A51D5B2519871D9C00A55B06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A51D5B2619871D9C00A55B06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A51D5B2819871D9C00A55B06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RhythmLine/RhythmLine-Prefix.pch";
+				INFOPLIST_FILE = "RhythmLine/RhythmLine-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A51D5B2919871D9C00A55B06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RhythmLine/RhythmLine-Prefix.pch";
+				INFOPLIST_FILE = "RhythmLine/RhythmLine-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A51D5B2B19871D9C00A55B06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RhythmLine.app/RhythmLine";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RhythmLine/RhythmLine-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "RhythmLineTests/RhythmLineTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		A51D5B2C19871D9C00A55B06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RhythmLine.app/RhythmLine";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RhythmLine/RhythmLine-Prefix.pch";
+				INFOPLIST_FILE = "RhythmLineTests/RhythmLineTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A51D5AE619871D9C00A55B06 /* Build configuration list for PBXProject "RhythmLine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A51D5B2519871D9C00A55B06 /* Debug */,
+				A51D5B2619871D9C00A55B06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A51D5B2719871D9C00A55B06 /* Build configuration list for PBXNativeTarget "RhythmLine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A51D5B2819871D9C00A55B06 /* Debug */,
+				A51D5B2919871D9C00A55B06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A51D5B2A19871D9C00A55B06 /* Build configuration list for PBXNativeTarget "RhythmLineTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A51D5B2B19871D9C00A55B06 /* Debug */,
+				A51D5B2C19871D9C00A55B06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A51D5AE319871D9C00A55B06 /* Project object */;
+}
