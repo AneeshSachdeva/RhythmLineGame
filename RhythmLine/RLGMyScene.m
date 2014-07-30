@@ -122,7 +122,8 @@ const float player_y_position = 0.42f * play_area_height;
 
 - (void)updateWithTimeSinceLastUpdate:(CFTimeInterval)timeSinceLastUpdate
 {
-    //self.myLabel.text = [NSString stringWithFormat:@"%d", [self.pathStream count]];
+    [self scaleNodesForResolution]; // scale the nodes for iphone and non-retina ipad displays
+    
     for (int i = 0; i < [self.pathStream count]; i++)
     {
         [[self.pathStream objectAtIndex:i] setPosition:[self convertPoint:CGPointMake(play_area_width/2, play_area_height/2)]];
@@ -131,17 +132,6 @@ const float player_y_position = 0.42f * play_area_height;
         {
             [self addChild:[self.pathStream objectAtIndex:i]];
         }
-
-        
-//        RLGPath* path = [self.pathStream objectAtIndex:0];
-//        if (path != nil)
-//        {
-//           [self addChild:path];
-//        }
-//        else
-//        {
-//            //self.myLabel.text = @"nil";
-//        }
     }
 }
 
@@ -153,10 +143,6 @@ const float player_y_position = 0.42f * play_area_height;
 - (void)initBasicPaths
 {
     RLGPath* path1 = [[RLGPath alloc] initWithImageNamed:@"StraightTest.png"];
-    if (path1 != nil)
-    {
-        //self.myLabel.text = @"not nil";
-    }
     
     self.basicPaths = @[path1];
 }
@@ -183,7 +169,19 @@ const float player_y_position = 0.42f * play_area_height;
     }
 }
 
-/** Returns the name of the appropriate texture for the decice from the texture atlas */ 
+- (void)scaleNodesForResolution
+{
+    if ((UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) ||
+        (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad && [[UIScreen mainScreen] scale] == 1.0))
+    {
+        for (SKNode* node in self.children)
+        {
+            [node setScale:0.5f];
+        }
+    }
+}
+
+/** Returns the name of the appropriate texture for the decice from the texture atlas */
 - (SKTextureAtlas *)textureAtlasNamed:(NSString *)fileName
 {
     if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
