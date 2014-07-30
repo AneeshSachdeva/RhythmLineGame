@@ -45,7 +45,11 @@ const float player_y_position = 0.42f * play_area_height;
 //        [self addChild:self.player];
 
         [self initBasicPaths]; // initialize the array that contains all the basic paths
-        [self.pathStream addObject:[self.basicPaths objectAtIndex:[self randomBasicPathIndex]]]; // add the first path to the stream
+        self.pathStream = [[NSMutableArray alloc] initWithObjects:[self.basicPaths objectAtIndex:[self randomBasicPathIndex]], nil];
+        if ([[self.pathStream objectAtIndex:0] parent] != nil)
+        {
+            //self.myLabel.text = @"has parent";
+        }
 
         appDelegate = [[UIApplication sharedApplication] delegate];
         [appDelegate.umooveEngine enableDirections:YES];
@@ -95,17 +99,10 @@ const float player_y_position = 0.42f * play_area_height;
     
 }
 
-- (void)initBasicPaths
-{
-    RLGPath* path1 = [[RLGPath alloc] initWithImageNamed:@"path"];
-    
-    self.basicPaths = @[path1];
-}
-
 - (void)UMDirectionsUpdate:(int)x :(int)y
 {
     self.player.position = [self convertPoint:CGPointMake(x + play_area_width/2, player_y_position)];
-    self.myLabel.text = [NSString stringWithFormat:@"%@", NSStringFromCGPoint(self.player.position)];
+    //self.myLabel.text = [NSString stringWithFormat:@"%@", NSStringFromCGPoint(self.player.position)];
     //self.myLabel.text = [NSString stringWithFormat:@"%d", x];
 }
 
@@ -125,7 +122,43 @@ const float player_y_position = 0.42f * play_area_height;
 
 - (void)updateWithTimeSinceLastUpdate:(CFTimeInterval)timeSinceLastUpdate
 {
+    //self.myLabel.text = [NSString stringWithFormat:@"%d", [self.pathStream count]];
+    for (int i = 0; i < [self.pathStream count]; i++)
+    {
+        [[self.pathStream objectAtIndex:i] setPosition:[self convertPoint:CGPointMake(play_area_width/2, play_area_height/2)]];
+        
+        if ([[self.pathStream objectAtIndex:i] parent] == nil)
+        {
+            [self addChild:[self.pathStream objectAtIndex:i]];
+        }
+
+        
+//        RLGPath* path = [self.pathStream objectAtIndex:0];
+//        if (path != nil)
+//        {
+//           [self addChild:path];
+//        }
+//        else
+//        {
+//            //self.myLabel.text = @"nil";
+//        }
+    }
+}
+
+- (void)updatePathStream
+{
     
+}
+
+- (void)initBasicPaths
+{
+    RLGPath* path1 = [[RLGPath alloc] initWithImageNamed:@"StraightTest.png"];
+    if (path1 != nil)
+    {
+        //self.myLabel.text = @"not nil";
+    }
+    
+    self.basicPaths = @[path1];
 }
 
 /// HELPER METHODS ///

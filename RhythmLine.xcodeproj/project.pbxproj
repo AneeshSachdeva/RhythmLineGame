@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A503C59219889042008CD346 /* Umoove.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A503C59119889042008CD346 /* Umoove.framework */; };
+		A503C5941988C367008CD346 /* StraightTest.png in Resources */ = {isa = PBXBuildFile; fileRef = A503C5931988C367008CD346 /* StraightTest.png */; };
 		A51D5AEF19871D9C00A55B06 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A51D5AEE19871D9C00A55B06 /* Foundation.framework */; };
 		A51D5AF119871D9C00A55B06 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A51D5AF019871D9C00A55B06 /* CoreGraphics.framework */; };
 		A51D5AF319871D9C00A55B06 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A51D5AF219871D9C00A55B06 /* UIKit.framework */; };
@@ -48,6 +49,7 @@
 
 /* Begin PBXFileReference section */
 		A503C59119889042008CD346 /* Umoove.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Umoove.framework; sourceTree = "<group>"; };
+		A503C5931988C367008CD346 /* StraightTest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StraightTest.png; sourceTree = "<group>"; };
 		A51D5AEB19871D9C00A55B06 /* RhythmLine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RhythmLine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A51D5AEE19871D9C00A55B06 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A51D5AF019871D9C00A55B06 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -170,6 +172,7 @@
 				A51D5B0B19871D9C00A55B06 /* RLGMyScene.h */,
 				A51D5B0C19871D9C00A55B06 /* RLGMyScene.m */,
 				A51D5B0E19871D9C00A55B06 /* Spaceship.png */,
+				A503C5931988C367008CD346 /* StraightTest.png */,
 				A51D5B1019871D9C00A55B06 /* Images.xcassets */,
 				A51D5AF719871D9C00A55B06 /* Supporting Files */,
 			);
@@ -294,6 +297,7 @@
 				A51D5B0719871D9C00A55B06 /* Main_iPad.storyboard in Resources */,
 				A51D5B0419871D9C00A55B06 /* Main_iPhone.storyboard in Resources */,
 				A51D5AFB19871D9C00A55B06 /* InfoPlist.strings in Resources */,
+				A503C5941988C367008CD346 /* StraightTest.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

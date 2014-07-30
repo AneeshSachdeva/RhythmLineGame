@@ -22,5 +22,6 @@
 
 @property NSArray* basicPaths;
 @property NSMutableArray* pathStream;
+@property NSMutableArray* pathsPendingStream;
 
 @end
