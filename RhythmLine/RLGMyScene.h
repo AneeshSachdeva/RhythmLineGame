@@ -7,7 +7,20 @@
 //
 
 #import <SpriteKit/SpriteKit.h>
+#import "RLGAppDelegate.h"
 
-@interface RLGMyScene : SKScene
+@interface RLGMyScene : SKScene <umooveDelegate>
+{
+    RLGAppDelegate *appDelegate;
+}
+
+@property (nonatomic) CFTimeInterval dTime;
+@property (nonatomic) NSTimeInterval lastUpdateTime;
+
+@property SKLabelNode* myLabel;
+@property SKSpriteNode* player;
+
+@property NSArray* basicPaths;
+@property NSMutableArray* pathStream;
 
 @end

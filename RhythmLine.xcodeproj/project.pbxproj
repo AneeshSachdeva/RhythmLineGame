@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A503C59219889042008CD346 /* Umoove.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A503C59119889042008CD346 /* Umoove.framework */; };
 		A51D5AEF19871D9C00A55B06 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A51D5AEE19871D9C00A55B06 /* Foundation.framework */; };
 		A51D5AF119871D9C00A55B06 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A51D5AF019871D9C00A55B06 /* CoreGraphics.framework */; };
 		A51D5AF319871D9C00A55B06 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A51D5AF219871D9C00A55B06 /* UIKit.framework */; };
@@ -25,7 +26,14 @@
 		A51D5B1A19871D9C00A55B06 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A51D5AF219871D9C00A55B06 /* UIKit.framework */; };
 		A51D5B2219871D9C00A55B06 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A51D5B2019871D9C00A55B06 /* InfoPlist.strings */; };
 		A51D5B2419871D9C00A55B06 /* RhythmLineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A51D5B2319871D9C00A55B06 /* RhythmLineTests.m */; };
-		A51D5B2E19871E5200A55B06 /* Umoove.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A51D5B2D19871E5200A55B06 /* Umoove.framework */; };
+		A51D5B341987562400A55B06 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A51D5B331987562400A55B06 /* libc++.dylib */; };
+		A51D5B361987562E00A55B06 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A51D5B351987562E00A55B06 /* CoreMotion.framework */; };
+		A51D5B381987563600A55B06 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A51D5B371987563600A55B06 /* QuartzCore.framework */; };
+		A51D5B3A1987564300A55B06 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A51D5B391987564300A55B06 /* CoreMedia.framework */; };
+		A51D5B3C1987564D00A55B06 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A51D5B3B1987564D00A55B06 /* CoreVideo.framework */; };
+		A51D5B3E1987565800A55B06 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A51D5B3D1987565800A55B06 /* AVFoundation.framework */; };
+		A5C5DE8A19875719004E7008 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5C5DE8919875719004E7008 /* SystemConfiguration.framework */; };
+		A5F7D39119888986007CE098 /* RLGPath.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F7D39019888986007CE098 /* RLGPath.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A503C59119889042008CD346 /* Umoove.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Umoove.framework; sourceTree = "<group>"; };
 		A51D5AEB19871D9C00A55B06 /* RhythmLine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RhythmLine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A51D5AEE19871D9C00A55B06 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A51D5AF019871D9C00A55B06 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -63,7 +72,15 @@
 		A51D5B1F19871D9C00A55B06 /* RhythmLineTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RhythmLineTests-Info.plist"; sourceTree = "<group>"; };
 		A51D5B2119871D9C00A55B06 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A51D5B2319871D9C00A55B06 /* RhythmLineTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RhythmLineTests.m; sourceTree = "<group>"; };
-		A51D5B2D19871E5200A55B06 /* Umoove.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Umoove.framework; sourceTree = "<group>"; };
+		A51D5B331987562400A55B06 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		A51D5B351987562E00A55B06 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		A51D5B371987563600A55B06 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A51D5B391987564300A55B06 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		A51D5B3B1987564D00A55B06 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		A51D5B3D1987565800A55B06 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		A5C5DE8919875719004E7008 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		A5F7D38F19888986007CE098 /* RLGPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLGPath.h; sourceTree = "<group>"; };
+		A5F7D39019888986007CE098 /* RLGPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLGPath.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,10 +88,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5C5DE8A19875719004E7008 /* SystemConfiguration.framework in Frameworks */,
+				A51D5B3E1987565800A55B06 /* AVFoundation.framework in Frameworks */,
+				A51D5B3C1987564D00A55B06 /* CoreVideo.framework in Frameworks */,
+				A503C59219889042008CD346 /* Umoove.framework in Frameworks */,
+				A51D5B3A1987564300A55B06 /* CoreMedia.framework in Frameworks */,
+				A51D5B381987563600A55B06 /* QuartzCore.framework in Frameworks */,
+				A51D5B361987562E00A55B06 /* CoreMotion.framework in Frameworks */,
+				A51D5B341987562400A55B06 /* libc++.dylib in Frameworks */,
 				A51D5AF119871D9C00A55B06 /* CoreGraphics.framework in Frameworks */,
 				A51D5AF319871D9C00A55B06 /* UIKit.framework in Frameworks */,
 				A51D5AF519871D9C00A55B06 /* SpriteKit.framework in Frameworks */,
-				A51D5B2E19871E5200A55B06 /* Umoove.framework in Frameworks */,
 				A51D5AEF19871D9C00A55B06 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -114,7 +138,14 @@
 		A51D5AED19871D9C00A55B06 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A51D5B2D19871E5200A55B06 /* Umoove.framework */,
+				A503C59119889042008CD346 /* Umoove.framework */,
+				A5C5DE8919875719004E7008 /* SystemConfiguration.framework */,
+				A51D5B3D1987565800A55B06 /* AVFoundation.framework */,
+				A51D5B3B1987564D00A55B06 /* CoreVideo.framework */,
+				A51D5B391987564300A55B06 /* CoreMedia.framework */,
+				A51D5B371987563600A55B06 /* QuartzCore.framework */,
+				A51D5B351987562E00A55B06 /* CoreMotion.framework */,
+				A51D5B331987562400A55B06 /* libc++.dylib */,
 				A51D5AEE19871D9C00A55B06 /* Foundation.framework */,
 				A51D5AF019871D9C00A55B06 /* CoreGraphics.framework */,
 				A51D5AF219871D9C00A55B06 /* UIKit.framework */,
@@ -127,12 +158,15 @@
 		A51D5AF619871D9C00A55B06 /* RhythmLine */ = {
 			isa = PBXGroup;
 			children = (
+				A51D5B321987213300A55B06 /* TextureAtlases.atlas */,
 				A51D5AFF19871D9C00A55B06 /* RLGAppDelegate.h */,
 				A51D5B0019871D9C00A55B06 /* RLGAppDelegate.m */,
 				A51D5B0219871D9C00A55B06 /* Main_iPhone.storyboard */,
 				A51D5B0519871D9C00A55B06 /* Main_iPad.storyboard */,
 				A51D5B0819871D9C00A55B06 /* RLGViewController.h */,
 				A51D5B0919871D9C00A55B06 /* RLGViewController.m */,
+				A5F7D38F19888986007CE098 /* RLGPath.h */,
+				A5F7D39019888986007CE098 /* RLGPath.m */,
 				A51D5B0B19871D9C00A55B06 /* RLGMyScene.h */,
 				A51D5B0C19871D9C00A55B06 /* RLGMyScene.m */,
 				A51D5B0E19871D9C00A55B06 /* Spaceship.png */,
@@ -169,6 +203,13 @@
 				A51D5B2019871D9C00A55B06 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A51D5B321987213300A55B06 /* TextureAtlases.atlas */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = TextureAtlases.atlas;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,6 +316,7 @@
 				A51D5B0119871D9C00A55B06 /* RLGAppDelegate.m in Sources */,
 				A51D5B0A19871D9C00A55B06 /* RLGViewController.m in Sources */,
 				A51D5AFD19871D9C00A55B06 /* main.m in Sources */,
+				A5F7D39119888986007CE098 /* RLGPath.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,8 +458,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RhythmLine/RhythmLine-Prefix.pch";
 				INFOPLIST_FILE = "RhythmLine/RhythmLine-Info.plist";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -434,8 +478,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RhythmLine/RhythmLine-Prefix.pch";
 				INFOPLIST_FILE = "RhythmLine/RhythmLine-Info.plist";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -499,6 +545,7 @@
 				A51D5B2919871D9C00A55B06 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A51D5B2A19871D9C00A55B06 /* Build configuration list for PBXNativeTarget "RhythmLineTests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +554,7 @@
 				A51D5B2C19871D9C00A55B06 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Umoove/UMooveEngine.h>
 
 @interface RLGAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property UMooveEngine *umooveEngine;
 
 @end

@@ -12,8 +12,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    self.umooveEngine = [[UMooveEngine alloc] initWithKey:723435431]; // create global umoove engine
     // Override point for customization after application launch.
-    return YES; 
+    [[UIApplication sharedApplication] setStatusBarHidden:YES];
+    return YES;
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application
@@ -26,6 +28,8 @@
 {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    
+    [self.umooveEngine terminate]; // vital to call, release internal process
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application
